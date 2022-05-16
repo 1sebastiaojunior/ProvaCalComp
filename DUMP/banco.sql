@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 16/05/2022 às 04:27
+-- Tempo de geração: 16/05/2022 às 16:27
 -- Versão do servidor: 10.4.21-MariaDB
 -- Versão do PHP: 7.4.28
 
@@ -41,10 +41,10 @@ CREATE TABLE `DQC84` (
 --
 
 INSERT INTO `DQC84` (`ID`, `MODEL_ID`, `FAT_PART_NO`, `TOTAL_LOCATION`, `UPDATE_DT`, `CREATE_DT`) VALUES
-(2, 12, '2aaaaaaaaa00', 8, '2022-05-15 05:57:05', '2022-05-15 05:29:18'),
-(3, 11, 'EEEEEEEEEEE', 5, '2022-05-15 05:58:13', '2022-05-15 05:58:13'),
-(4, 22, 'agora1', 55, '2022-05-15 06:13:47', '2022-05-15 06:13:47'),
-(5, 23, '1teste1001', 62, '2022-05-15 13:44:16', '2022-05-15 12:04:13');
+(8, 11, 'SD018CMAB1R', 124, '2022-05-16 13:55:49', '2022-05-16 13:55:49'),
+(9, 11, 'SD018CMAB0T', 129, '2022-05-16 13:56:38', '2022-05-16 13:56:38'),
+(10, 11, 'SD018CMAB0P', 2, '2022-05-16 13:58:06', '2022-05-16 13:58:06'),
+(11, 11, 'SD018HANB0D', 3, '2022-05-16 13:59:02', '2022-05-16 13:59:02');
 
 -- --------------------------------------------------------
 
@@ -68,9 +68,9 @@ CREATE TABLE `DQC841` (
 --
 
 INSERT INTO `DQC841` (`ID`, `FAT_PART_NO_ID`, `PARTS_NO`, `UNT_USG`, `DESCRIPTION`, `REF_DESIGNATOR`, `UPDATE_DT`, `CREATE_DT`) VALUES
-(1, 4, 'hhff11', 4, 'qwerty', 't44', '2022-05-15 18:22:46', '2022-05-15 18:22:46'),
-(2, 4, 'qqqqqqq', 111111, 'sdfsdfsds', 'fsdfsdfsdf', '2022-05-15 21:19:18', '2022-05-15 21:19:18'),
-(3, 5, 'EEEEE', 44, 'DFDSSAAS', 'ER6', '2022-05-15 21:48:57', '2022-05-15 21:48:57');
+(4, 9, 'HGSE5014R05', 1, 'LABEL PCB BARCODE LABEL 10X6MM 25# PLASTIC BLANK', '(null)', '2022-05-16 14:06:35', '2022-05-16 14:06:35'),
+(5, 8, 'DAH10003Z04', 1, 'PCB_MULTI LAYER_10S_1OZ FR4 ENIG', 'PCB', '2022-05-16 14:10:32', '2022-05-16 14:10:32'),
+(6, 11, 'SD018PMAB0P', 1, 'TEST TEST', '(null)', '2022-05-16 14:17:00', '2022-05-16 14:17:00');
 
 -- --------------------------------------------------------
 
@@ -88,13 +88,9 @@ CREATE TABLE `DQCMODEL` (
 --
 
 INSERT INTO `DQCMODEL` (`ID`, `MODEL`) VALUES
-(26, '3344'),
-(22, 'agora'),
-(25, 'assssddd9'),
-(24, 'fffffff'),
 (11, 'SSD018'),
 (12, 'SSD019'),
-(23, 'teste1001');
+(27, 'SSD020');
 
 --
 -- Índices para tabelas despejadas
@@ -130,19 +126,19 @@ ALTER TABLE `DQCMODEL`
 -- AUTO_INCREMENT de tabela `DQC84`
 --
 ALTER TABLE `DQC84`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `DQC841`
 --
 ALTER TABLE `DQC841`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `DQCMODEL`
 --
 ALTER TABLE `DQCMODEL`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- Restrições para tabelas despejadas
