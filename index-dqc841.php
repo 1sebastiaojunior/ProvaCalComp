@@ -7,12 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
 
-    <title>Modelos</title>
+    <title>DQC841</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cadastro DQCModel</a>
+        <a class="navbar-brand" href="#">Cadastro DQC841</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,10 +22,10 @@
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="?page=novo">Novo DQCModel</a>
+            <a class="nav-link" href="?page-dqc841=novo-dqc841">Novo DQC841</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="?page=listar">Listar DQCModel</a>
+            <a class="nav-link" href="?page-dqc841=listar-dqc841">Listar DQC841</a>
             </li>
         </ul>
         </div>
@@ -33,27 +33,27 @@
     </nav>
 
     <div class="container">
-        <div class="row"></div>
+        <div class="row">
             <div class="col mt-5">
             <?php
                 include("config.php");
-                switch (@$_REQUEST["page"]) {
-                    case "novo":
-                        include("novo-dqcmodel.php");
+                switch (@$_REQUEST["page-dqc841"]) {
+                    case "novo-dqc841":
+                        include("novo-dqc841.php");
                         break; 
-                    case "listar":
-                        include("listar-dqcmodel.php");
+                    case "listar-dqc841":
+                        include("listar-dqc841.php");
                         break;
-                    case "salvar":
-                        include("salvar-dqcmodel.php");
+                    case "salvar-dqc841":
+                        include("salvar-dqc841.php");
                         break;
-                    case "editar":
-                        include("editar-dqcmodel.php");
+                    case "editar-dqc841":
+                        include("editar-dqc841.php");
                         break;
                     default:
                     print "<h1>Bem vindos!</h1>";
                 }
-            ?>
+    ?>
             </div>
         </div>
     </div>

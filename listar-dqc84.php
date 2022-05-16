@@ -1,7 +1,9 @@
 <h1>Listar DQC84</h1>
+
+<a href="gerar_planilha84.php"><button type='button' class='btn btn-sm btn-success mb-3'>GERAR PLANILHA</button></a>
+
 <?php
-	$sql = "SELECT * FROM DQC84";
-	//$sql1 = "SELECT * FROM DQC84 A INNER JOIN DQCMODEL B ON A.MODEL_ID = B.ID";
+	$sql = "SELECT * FROM DQC84 A INNER JOIN DQCMODEL B ON A.MODEL_ID = B.ID";
 
 	$res = $conn->query($sql);
 
@@ -10,7 +12,6 @@
 	if ($qtd > 0) {
 		print "<table class='table table-hover table-striped table-bordered'>";
 			print "<tr>";
-			print "<th>ID</th>";
 			print "<th>FAT_PART_NO</th>";
             print "<th>Model_ID</th>";
             print "<th>TOTAL_LOCATION</th>";
@@ -20,9 +21,8 @@
 			print "</tr>";
 		while ($row = $res->fetch_object()) {
 			print "<tr>";
-			print "<td>".$row->ID."</td>";
 			print "<td>".$row->FAT_PART_NO."</td>";
-            print "<td>".$row->MODEL_ID."</td>";
+            print "<td>".$row->MODEL."</td>";
             print "<td>".$row->TOTAL_LOCATION."</td>";
             print "<td>".$row->UPDATE_DT."</td>";
             print "<td>".$row->CREATE_DT."</td>";

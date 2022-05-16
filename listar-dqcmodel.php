@@ -1,4 +1,7 @@
 <h1>Listar DQCModel</h1>
+
+<a href="gerar_planilha.php"><button type='button' class='btn btn-sm btn-success mb-3'>GERAR PLANILHA</button></a>
+
 <?php
 	$sql = "SELECT * FROM DQCMODEL";
 
@@ -9,13 +12,11 @@
 	if ($qtd > 0) {
 		print "<table class='table table-hover table-striped table-bordered'>";
 			print "<tr>";
-			print "<th>ID</th>";
 			print "<th>Model</th>";
 			print "<th>Ações</td>";
 			print "</tr>";
 		while ($row = $res->fetch_object()) {
 			print "<tr>";
-			print "<td>".$row->ID."</td>";
 			print "<td>".$row->MODEL."</td>";
 			print "<td> 
 					<button onclick=\"location.href='?page=editar&ID=".$row->ID."';\" class='btn btn-primary btn-sm'>Editar</button>
