@@ -34,7 +34,7 @@
 					<button onclick=\"location.href='?page-dqc841=editar-dqc841&ID=".$row->ID."';\" 
                     class='btn btn-primary btn-sm'>Editar</button>
 
-					<button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page-dqc841=salvar-dqc841&acao-dqc84=excluir-dqc841&ID=".$row->ID."';}else{false}\" 
+					<button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page-dqc841=salvar-dqc841&acao-dqc841=excluir-dqc841&ID=".$row->ID."';}else{false}\" 
                     class='btn btn-danger btn-sm'>Excluir</button>
 					</td>";
 			print "</tr>";

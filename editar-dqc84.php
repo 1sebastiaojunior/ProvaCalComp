@@ -1,6 +1,6 @@
 <h1>Editar DQC84</h1>
 <?php
-    $sql = "SELECT * FROM DQC84 WHERE ID=".$_REQUEST["ID"];
+    $sql = "SELECT * FROM DQC84 A INNER JOIN DQCMODEL B ON A.MODEL_ID = B.ID";
     $res = $conn->query($sql);
     $row = $res->fetch_object();
 ?>
@@ -9,8 +9,8 @@
     <input type="hidden" name="acao-dqc84" value="editar-dqc84">
     <input type="hidden" name="ID" value="<?php print $row->ID; ?>">
     <div class="mb-3">
-        <label>Model_ID</label>
-        <input type="text" name="MODEL" readonly value="<?php print $row->MODEL_ID; ?>" class="form-control">
+        <label>Model</label>
+        <input type="text" name="MODEL" readonly value="<?php print $row->MODEL; ?>" class="form-control">
         <label>FAT_PART_NO</label>
         <input type="text" name="FAT_PART_NO" value="<?php print $row->FAT_PART_NO; ?>" class="form-control">
         <label>TOTAL_LOCATION</label>

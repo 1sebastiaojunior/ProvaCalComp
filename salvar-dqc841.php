@@ -22,13 +22,13 @@
 
             break;
         case 'editar-dqc841':
-            $FAT_PART_NO_ID = $_POST["FAT_PART_NO_ID"];
+            $FAT_PART_NO = $_POST["FAT_PART_NO"];
             $PARTS_NO = $_POST["PARTS_NO"];
             $UNT_USG = $_POST["UNT_USG"];
             $DESCRIPTION = $_POST["DESCRIPTION"];
             $REF_DESIGNATOR = $_POST["REF_DESIGNATOR"];
 
-             $sql = "UPDATE DQC841 SET FAT_PART_NO_ID = '{$FAT_PART_NO_ID}', PARTS_NO = '{$PARTS_NO}', UNT_USG = '{$UNT_USG}', DESCRIPTION = '{$DESCRIPTION}', REF_DESIGNATOR = '{$REF_DESIGNATOR}'
+             $sql = "UPDATE DQC841 SET FAT_PART_NO = '{$FAT_PART_NO}', PARTS_NO = '{$PARTS_NO}', UNT_USG = '{$UNT_USG}', DESCRIPTION = '{$DESCRIPTION}', REF_DESIGNATOR = '{$REF_DESIGNATOR}'
              WHERE
              ID = ".$_REQUEST["ID"];
 

@@ -13,7 +13,7 @@
 		print "<table class='table table-hover table-striped table-bordered'>";
 			print "<tr>";
 			print "<th>FAT_PART_NO</th>";
-            print "<th>Model_ID</th>";
+            print "<th>Model</th>";
             print "<th>TOTAL_LOCATION</th>";
             print "<th>UPDATE_DT</th>";
             print "<th>CREATE_DT</th>";
